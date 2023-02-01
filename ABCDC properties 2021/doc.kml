@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>ABCDC properties 2021</name>
+    <description/>
+    <Style id="icon-1603-006064-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1603-006064-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1603-006064-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-006064-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-006064-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-0288D1-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-0288D1-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-9C27B0-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-9C27B0-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-9C27B0">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-9C27B0-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-9C27B0-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-9C27B0-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1603-9C27B0-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1603-9C27B0-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-9C27B0-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-9C27B0-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-A52714-nodesc-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1603-A52714-nodesc-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1603-A52714-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-A52714-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-A52714-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-E65100-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-E65100-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-FFD600-normal">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-FFD600-highlight">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-0F9D58-3101-28-nodesc-normal">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>3.101</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>1c589d0f</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-0F9D58-3101-28-nodesc-highlight">
+      <LineStyle>
+        <color>ff589d0f</color>
+        <width>4.6515</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>1c589d0f</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-0F9D58-3101-28-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-0F9D58-3101-28-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-0F9D58-3101-28-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-E65100-3401-23-nodesc-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>3.401</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>170051e6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-E65100-3401-23-nodesc-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>5.1015</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>170051e6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-E65100-3401-23-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-E65100-3401-23-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-E65100-3401-23-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>ABCDC properties</name>
+      <Placemark>
+        <name>40 Ashford St</name>
+        <description><![CDATA[12-unit single room occupancy (SRO) renovated Victorian house<br>Individuals with special needs<br>Developed in 1993]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1273285,42.354767,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brian J. Honan Apartments</name>
+        <description><![CDATA[50-unit rental property<br>Old industrial Legal Sea Foods Co. headquarters building was demolished and replaced with nine buildings<br>Opened in 2005]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.138121,42.3553594,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brighton Allston Apartments (Allston Site)</name>
+        <description><![CDATA[1387 Commonwealth Avenue<br>60-unit rental property<br>Acquired in 1996 and renovated in 1997]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1376568,42.3488938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brighton Allston Apartments (Brighton Site)</name>
+        <description><![CDATA[439 - 501 Washington St. (Brighton)<br>60-unit rental property<br>Acquired in 1996 and renovated in 1997]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1610235,42.3491026,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carol Ave</name>
+        <description><![CDATA[33-unit mixed-income property<br>Cooperative until the CDC purchased it from the shareholders in 2018]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1409603,42.3447784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Commonwealth Apartments</name>
+        <description><![CDATA[118-unit rental property <br>For thirteen years, Allston Brighton CDC and the tenants worked together to preserve these apartments as affordable. In 1997, Allston Brighton CDC and the tenants bought the buildings together<br>Apartments are run by a joint ownership board made up of tenants and Allston Brighton CDC]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.133688,42.3495741,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glenville Apartments</name>
+        <description><![CDATA[58 to 90 Glenville Ave<br>117-unit rental property<br>Purchased by tenants and Allston Brighton CDC in 1997]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1341522,42.3495788,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hano Homes
+</name>
+        <description><![CDATA[1 - 39 Hano Street<br>20-unit rental property <br>10 row houses<br>Purchased by Allston Brighton CDC in the early 1980s<br>Renovated in 2003]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1370711,42.3563112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long Glen Rental II</name>
+        <description>33-unit rental property</description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1339433,42.3498217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ray Dooley Apartments</name>
+        <description><![CDATA[59 3BR, 2BR, 1BR, and studio units<br>Converted from market-rate to affordable rentals in 2006]]></description>
+        <styleUrl>#icon-1603-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -71.135746,42.348818,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Projects</name>
+      <Placemark>
+        <name>1234 Soldiers Field Rd</name>
+        <styleUrl>#icon-1603-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1363571,42.3636727,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>14-16 Chestnut</name>
+        <styleUrl>#icon-1603-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1533709,42.3486033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>6 Quint</name>
+        <styleUrl>#icon-1603-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1338504,42.3528507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Faneuil Gardens</name>
+        <description>Boston Housing Authority property</description>
+        <styleUrl>#icon-1603-9C27B0</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1522594,42.3560188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hill Memorial Baptist Church</name>
+        <styleUrl>#icon-1603-9C27B0-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1293049,42.360488,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>All Bright Homes properties</name>
+      <Placemark>
+        <name>20 Richardson St</name>
+        <description><![CDATA[Single family<br>3 bed, 1 bath<br>1,280 sq ft<br>Built on 1900<br>Sold on ..., asking price $749,900]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1432502,42.3611512,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>41 Haskell St</name>
+        <description><![CDATA[Single family<br>3 beds, 2 baths<br>Sold on ..., asking price $800,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1290118,42.359874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[90 Easton St #1, #2 & #3]]></name>
+        <description><![CDATA[Three-family<br>2 beds, 2 baths<br>Unit 1: Sold on ..., asking price $599,900<br>Unit 2: Sold on ..., asking price $649,900<br>Unit 3: Sold on ..., asking price $649,900]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1323882,42.3589695,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>59 Hopedale St</name>
+        <description><![CDATA[Single family<br>5 beds, 2 baths<br>Sold on ..., asking price $899,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1246362,42.3606573,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>22 Hopedale St</name>
+        <description><![CDATA[Single family<br>4 beds, 1 bath<br>Sold on ..., asking price $799,900]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1265394,42.3599789,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>70 Franklin St</name>
+        <description><![CDATA[Townhome-style condo<br>2 beds, 2 baths<br>Sold on ..., asking price $595,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1332623,42.3580899,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>58 Antwerp St</name>
+        <description><![CDATA[Single family<br>3 beds, 1.5 baths<br>Sold on ..., asking price $738,500]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1398733,42.3600664,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>106 Litchfield St</name>
+        <description><![CDATA[Condominium<br>3 beds, 1 bath<br>Sold on ..., asking price $480,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1399419,42.3618573,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>108 Litchfield St</name>
+        <description><![CDATA[Condominium<br>3 beds, 1 bath<br>Sold on ..., asking price $480,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1400009,42.361898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>85-87 Adamson St</name>
+        <description><![CDATA[Three family<br>3 beds, 1 bath<br>1st floor: Sold on ..., asking price $470,000<br>2nd floor: Sold on ..., asking price $474,900<br>3rd floor (1 bed, 1 bath): Sold on ..., asking price $382,900]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.133431,42.357597,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>14 Westford St, apt. #101</name>
+        <description><![CDATA[Condominium<br>2 beds, 1 bath<br>Sold on ..., asking price $380,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1350573,42.3623379,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>56 S Waverly St</name>
+        <description><![CDATA[Two family<br>Sold on ..., asking price $870,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1419931,42.3603288,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>47 Litchfield St</name>
+        <description><![CDATA[Condominium<br>3 beds, 1 bath<br>Apt #101: Sold on ..., asking price $422,000<br>Apt #102: Sold on ..., asking price $392,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.14079,42.3597304,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>7-9 Bagnal St</name>
+        <description><![CDATA[Condominium<br>2 beds, 1.5 baths<br>Sold on ..., asking price $435,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1358318,42.3594499,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>21-23 Windom St</name>
+        <description><![CDATA[Two family<br>Sold on ..., asking price $530,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1237385,42.3600997,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>29-31 Litchfield St</name>
+        <description><![CDATA[Three family<br>Sold on ..., asking price $900,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1410673,42.3591133,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>16R Waverly St</name>
+        <description><![CDATA[Two family<br>3 beds, 1.5 baths (in each unit)<br>Sold on ..., asking price $845,000]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -71.144899,42.3611829,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>84 Raymond St</name>
+        <description><![CDATA[Looking to purchase<br>Trickiness with separating the parcel]]></description>
+        <styleUrl>#icon-1603-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1321187,42.3613798,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Neighborhoods</name>
+      <Placemark>
+        <name>Allston</name>
+        <styleUrl>#poly-E65100-3401-23-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -71.1330792,42.3722678,0
+                -71.1318037,42.3705331,0
+                -71.1313376,42.3696499,0
+                -71.1320303,42.3687667,0
+                -71.1337709,42.367485,0
+                -71.1360932,42.3666023,0
+                -71.1378552,42.3655902,0
+                -71.1399176,42.3644829,0
+                -71.1438386,42.3640045,0
+                -71.145478,42.3623523,0
+                -71.1457954,42.3616086,0
+                -71.1460701,42.3611024,0
+                -71.147216,42.3594181,0
+                -71.14925,42.3560497,0
+                -71.1437329,42.3547799,0
+                -71.1436382,42.352765,0
+                -71.1428676,42.3527798,0
+                -71.1424638,42.3525082,0
+                -71.1422354,42.3520124,0
+                -71.1428945,42.3518138,0
+                -71.1428394,42.3516703,0
+                -71.1429652,42.3516371,0
+                -71.1428306,42.351079,0
+                -71.1400939,42.3514693,0
+                -71.1400062,42.3500299,0
+                -71.1383075,42.3498626,0
+                -71.1382182,42.3491086,0
+                -71.1376568,42.3488938,0
+                -71.1379042,42.3485015,0
+                -71.1392104,42.3488041,0
+                -71.1398916,42.3486164,0
+                -71.1403098,42.3482094,0
+                -71.1404596,42.3474905,0
+                -71.1386136,42.3468773,0
+                -71.1386982,42.3466342,0
+                -71.1372795,42.3461164,0
+                -71.136588,42.3466982,0
+                -71.1352051,42.3460221,0
+                -71.1287078,42.3495511,0
+                -71.1273839,42.3499512,0
+                -71.124822,42.3513221,0
+                -71.1252034,42.3522216,0
+                -71.1249412,42.3533747,0
+                -71.1210521,42.352904,0
+                -71.120655,42.3545314,0
+                -71.1190134,42.3542082,0
+                -71.1176294,42.3537581,0
+                -71.1143251,42.3520207,0
+                -71.1130482,42.3514081,0
+                -71.1120074,42.3513822,0
+                -71.1108055,42.3517131,0
+                -71.1105907,42.3525039,0
+                -71.1141309,42.3534036,0
+                -71.1158367,42.3544878,0
+                -71.1168988,42.3559366,0
+                -71.1167053,42.3600195,0
+                -71.1172842,42.3642134,0
+                -71.1199414,42.3640029,0
+                -71.1245296,42.3636498,0
+                -71.1245864,42.3643704,0
+                -71.1234554,42.3645116,0
+                -71.1232536,42.3651745,0
+                -71.1234507,42.3652795,0
+                -71.1234587,42.3655054,0
+                -71.124561,42.3658976,0
+                -71.1256204,42.3663692,0
+                -71.1241075,42.3679858,0
+                -71.1232492,42.3689048,0
+                -71.1242791,42.3697765,0
+                -71.1250945,42.3707909,0
+                -71.1262532,42.3723356,0
+                -71.1278412,42.3734522,0
+                -71.1288928,42.3738625,0
+                -71.1299658,42.3740191,0
+                -71.131082,42.3739677,0
+                -71.1321981,42.3736943,0
+                -71.1328425,42.3730286,0
+                -71.1330792,42.3722678,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Brighton</name>
+        <styleUrl>#poly-0F9D58-3101-28-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -71.1683912,42.3601339,0
+                -71.1695457,42.3589199,0
+                -71.169799,42.358023,0
+                -71.1737814,42.3533433,0
+                -71.1737209,42.3515318,0
+                -71.1745011,42.34978,0
+                -71.1667457,42.3397316,0
+                -71.1683777,42.3386993,0
+                -71.1694314,42.3379831,0
+                -71.1676296,42.3331188,0
+                -71.1632846,42.3336153,0
+                -71.1614931,42.333509,0
+                -71.1591548,42.3321541,0
+                -71.1569244,42.3301422,0
+                -71.1499142,42.3345683,0
+                -71.1505643,42.3351954,0
+                -71.1483456,42.335815,0
+                -71.1487136,42.3367632,0
+                -71.1461848,42.3373545,0
+                -71.1466203,42.3383944,0
+                -71.1446699,42.3396018,0
+                -71.1425928,42.3399468,0
+                -71.1415714,42.3403592,0
+                -71.1412453,42.3410729,0
+                -71.1395631,42.342659,0
+                -71.1352051,42.3460221,0
+                -71.1316852,42.3479521,0
+                -71.1278288,42.349764,0
+                -71.124822,42.3513221,0
+                -71.1224911,42.3516987,0
+                -71.1231402,42.3521826,0
+                -71.1244197,42.3523095,0
+                -71.1264716,42.352262,0
+                -71.1311069,42.3528328,0
+                -71.1397127,42.3538153,0
+                -71.1470973,42.3555574,0
+                -71.1508668,42.3565539,0
+                -71.1527944,42.3570282,0
+                -71.1536188,42.3572892,0
+                -71.1542071,42.3576295,0
+                -71.1554786,42.3581409,0
+                -71.1577801,42.3582796,0
+                -71.158821,42.3586998,0
+                -71.1611819,42.3585886,0
+                -71.1619554,42.3590481,0
+                -71.1635023,42.3584131,0
+                -71.1651957,42.359222,0
+                -71.1683912,42.3601339,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Others</name>
+      <Placemark>
+        <name>9 Holton St</name>
+        <styleUrl>#icon-1603-006064-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -71.1338365,42.3597154,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
