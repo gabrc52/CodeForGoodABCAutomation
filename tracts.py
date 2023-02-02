@@ -50,9 +50,13 @@ def get_relevant_census_tracts(year):
     layer = result['OUTPUT']
     try:
         return [feature["GEOID"] for feature in layer.getFeatures()]
+    # These are based on directly observing the files...
     except KeyError:
-        # TODO: handle
-        return 'Different format!'
+        try:
+            return [feature["GEOID10"] for feature in layer.getFeatures()]
+        except KeyError:
+            # TODO: convert to GEOID using walk thingies
+            return [feature["GISJOIN"] for feature in layer.getFeatures()]
 
 
 if __name__ == "__console__":
