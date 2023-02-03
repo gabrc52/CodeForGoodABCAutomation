@@ -2,6 +2,8 @@ import csv
 from pathlib import Path
 from collections import Counter
 
+csv_path = "downloaded/social_explorer"
+
 class Data_Year:
     def __init__(self, filename):
         self.filename = filename
@@ -10,9 +12,11 @@ class Data_Year:
         self.columns = set()
 
     def process(self):
-        file = open(self.filename, "r")
+        file = open(f"{csv_path}/{self.filename}", "r")
         data = list(csv.reader(file, delimiter=","))
         file.close()
+
+        assert len(data[0]) == len(data[1])
 
         #column header
         for column_head in range(len(data[0])):
@@ -69,14 +73,17 @@ for i in colliding_categories:
 
 attribute = 'hi :)'
 lookupyear = '0'
-while attribute != 'quit' and lookupyear != 'quit':
-    lookupyear = str(input("Enter year: "))
-    if lookupyear != 'quit':
-        attribute = str(input("Enter attribute: "))
-        if attribute != 'quit':
-            if attribute not in colliding_categories:
-                print('Error Key!')
-                continue
-            else:
-                print(save_obj[lookupyear].processed[attribute])
+try:
+    while attribute != 'quit' and lookupyear != 'quit':
+        lookupyear = str(input("Enter year: "))
+        if lookupyear != 'quit':
+            attribute = str(input("Enter attribute: "))
+            if attribute != 'quit':
+                if attribute not in colliding_categories:
+                    print('Error Key!')
+                    continue
+                else:
+                    print(save_obj[lookupyear].processed[attribute])
+except EOFError:
+    print("\n\nExiting...")
                 
