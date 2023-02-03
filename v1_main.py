@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 
-filename = '2020.csv'
+filename = 'downloaded/social_explorer/2020.csv'
 
 file = open(filename, "r")
 data = list(csv.reader(file, delimiter=","))
