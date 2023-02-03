@@ -33,7 +33,7 @@
 </body>
 
 <script>
-    document.getElementById("yearslider").addEventListener("change", (event) => {
+    document.getElementById("yearslider").addEventListener("input", (event) => {
         const year = event.target.value;
         document.getElementById("yearlabel").innerText = `Year ${year}`;
         document.getElementById("map").src = `${year - 2009}.jpg`;
