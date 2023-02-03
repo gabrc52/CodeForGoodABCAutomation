@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Code for Good: Allston and Brighton maps!</h1>
+    <p>
+        <label>
+            Choose the map you wish to view:
+            <select class="field" name="field">
+                <option value="">Select map...</option>
+                <!-- TODO: programatically generate -->
+                <option value="income">Median household income</option>
+                <option value="young">% less than this age</option>
+                <option value="old">% less than that age</option>
+                <option value="hispanic">% of Hispanic population</option>
+                <option value="black">% of Black population</option>
+                <option value="TODO">These are illustrative, TODO fill out the list with the actual fields we have</option>
+        </label>
+    </p>
+    </select>
+    <p>
+        <input type="range" min="2010" max="2021" step="1" id="yearslider" value="2021">
+        <label for="volume" id="yearlabel">Year 2021</label>
+    </p>
+    <p>
+        <img src="11.jpg" id="map" height="400">
+    </p>
+</body>
+
+<script>
+    document.getElementById("yearslider").addEventListener("change", (event) => {
+        const year = event.target.value;
+        document.getElementById("yearlabel").innerText = `Year ${year}`;
+        document.getElementById("map").src = `${year - 2009}.jpg`;
+    });
+</script>
+
+</html>
