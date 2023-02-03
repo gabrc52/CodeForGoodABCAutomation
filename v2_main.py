@@ -1,6 +1,7 @@
 import csv
 from pathlib import Path
 from collections import Counter
+import os
 
 csv_path = "downloaded/social_explorer"
 
@@ -47,18 +48,24 @@ class Data_Year:
         if col in self.processed:
             del self.processed[col]
 
-years = ['2021.csv', '2020.csv', '2019.csv', '2018.csv', '2017.csv', '2016.csv', '2015.csv', '2014.csv', '2013.csv', '2012.csv', '2011.csv', '2010.csv', '2009.csv']
+years = sorted([f for f in os.listdir(csv_path) if f.endswith('.csv')], reverse=True)
 save_obj = {}
 
 tmp = Data_Year(years[0]) 
 tmp.process()
 colliding_categories = tmp.columns
+all_categories = tmp.columns
 #look at all years and find all similar categories
 for year in years:
     tmp = Data_Year(year) 
     tmp.process()
     save_obj[tmp.year] = tmp
     colliding_categories = colliding_categories & tmp.columns
+    all_categories = all_categories | tmp.columns
+
+print('-------------------   UNAVAILABLE categories   -------------------')
+for i in (all_categories - colliding_categories):
+    print(i)
 
 #make all years have the same categories
 for year in save_obj:
