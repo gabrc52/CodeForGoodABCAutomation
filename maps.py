@@ -9,7 +9,7 @@ import os
 # Change this to the path where you're storing this folder
 os.chdir("/home/rgabriel/MIT/soph/IAP/6.S187/automation")
 
-
+# TODO: fix indentation error!
 def joined_layer(year):
     """
     Loads the spreadsheet and block group shapefile and joins them
@@ -18,7 +18,6 @@ def joined_layer(year):
     """
     # TODO: use the cleaned spreadsheet and make sure the types are right...
     # ...and either remove the header row or make a new one
-
     # csv_layer = QgsVectorLayer(f"downloaded/social_explorer/{year}.csv", f"{year}.csv", "ogr")
     bg_shapefile = [f for f in os.listdir(f"downloaded/bg/bg_{year}") if f.endswith(".shp")][0]
     # bg_layer = QgsVectorLayer(f"downloaded/bg/bg_{year}/{bg_shapefile}", f"{year} block groups", "ogr")
@@ -28,7 +27,7 @@ def joined_layer(year):
             "INPUT": f"downloaded/bg/bg_{year}/{bg_shapefile}",
             "FIELD": "GEOID",
             "INPUT_2": f"social_explorer_cleaned/{year}.csv",
-            "FIELD_2": "FIPS",
+            "FIELD_2": "Geo_FIPS",
             "FIELDS_TO_COPY": [],
             "METHOD": 1,
             "DISCARD_NONMATCHING": True,
@@ -39,21 +38,28 @@ def joined_layer(year):
     return result['OUTPUT']
 
 
+def load_joined(year):
+    layer = joined_layer(year)
+    QgsProject.instance().addMapLayer(layer)
+
+
 def map_attribute(year, attr):
     """
     Generates a map of a given attribute (format TBD) for a given year
 
     Saves a PNG file (TBD)
     """
+    print(f"mapping {year}")
+
     layer = joined_layer(year)
     QgsProject.instance().addMapLayer(layer)
-    
+
     # TODO: implement
     # figure out how to do the equivalent of: right click layer > symbology > graduated
     # NOTE: use the same "classes" when comparing across years so the map symbology is consistent
 
-    with open(f'img/{year}_{attr}.png', 'w') as f:
-        f.write(NotImplemented)
+    # with open(f'img/{year}_{attr}.png', 'w') as f:
+    #     f.write(NotImplemented)
 
     QgsProject.instance().removeMapLayer(layer)
 

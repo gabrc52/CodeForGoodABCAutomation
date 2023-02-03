@@ -12,7 +12,6 @@
         <label>
             Choose the map you wish to view:
             <select class="field" name="field">
-                <option value="">Select map...</option>
                 <!-- TODO: programatically generate -->
                 <option value="income">Median household income</option>
                 <option value="young">% less than this age</option>
@@ -24,11 +23,11 @@
     </p>
     </select>
     <p>
-        <input type="range" min="2010" max="2021" step="1" id="yearslider" value="2021">
-        <label for="volume" id="yearlabel">Year 2021</label>
+        <input type="range" min="2011" max="2021" step="1" id="yearslider" value="2021">
+        <label for="volume" id="yearlabel">Move the slider to view the map</label>
     </p>
     <p>
-        <img src="11.jpg" id="map" height="400">
+        <img src="10.jpg" id="map" height="500">
     </p>
 </body>
 
@@ -36,7 +35,7 @@
     document.getElementById("yearslider").addEventListener("input", (event) => {
         const year = event.target.value;
         document.getElementById("yearlabel").innerText = `Year ${year}`;
-        document.getElementById("map").src = `${year - 2009}.jpg`;
+        document.getElementById("map").src = `${year}.png`;
     });
 </script>
 
