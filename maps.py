@@ -74,3 +74,7 @@ def generate_image_files():
     for attribute in attributes:
         for year in years:
             map_attribute(year, attribute)
+
+
+if __name__ == "__console__":
+    generate_image_files()
