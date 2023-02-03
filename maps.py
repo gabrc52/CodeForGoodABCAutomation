@@ -27,7 +27,7 @@ def joined_layer(year):
         {
             "INPUT": f"downloaded/bg/bg_{year}/{bg_shapefile}",
             "FIELD": "GEOID",
-            "INPUT_2": f"downloaded/social_explorer/{year}.csv",
+            "INPUT_2": f"social_explorer_cleaned/{year}.csv",
             "FIELD_2": "FIPS",
             "FIELDS_TO_COPY": [],
             "METHOD": 1,

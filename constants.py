@@ -18,6 +18,8 @@ equivalences = {
     f'SE_A04001_00{x}': f'SE_B04001_00{x}'
     for x in range(1, 10)
 } | {
+    'SE_A04001_010': 'SE_B04001_010',
+
     # Households by income to collapsed version
 
     # Households
