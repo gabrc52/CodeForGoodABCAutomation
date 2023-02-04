@@ -9,7 +9,6 @@ import os
 # Change this to the path where you're storing this folder
 os.chdir("/home/rgabriel/MIT/soph/IAP/6.S187/automation")
 
-# TODO: fix indentation error!
 def joined_layer(year):
     """
     Loads the spreadsheet and block group shapefile and joins them
