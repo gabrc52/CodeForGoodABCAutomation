@@ -1,8 +1,12 @@
 # Imports aren't needed in the console,
 # but they are here so VSCode/IDEs can be happy and autocomplete :)
 from qgis.core import *
+from qgis.gui import QgisInterface
 import processing
 import os
+
+# So the linter doesn't yell
+iface = QgisInterface()
 
 # PASTE THE CODE BELOW INTO QGIS CONSOLE
 
@@ -37,9 +41,21 @@ def joined_layer(year):
     return result['OUTPUT']
 
 
+# TODO: remove this function. only the next one should be needed
+# so move all the contents of this to the next function
+
+# this function helped with automating making maps by hand
 def load_joined(year):
     layer = joined_layer(year)
     QgsProject.instance().addMapLayer(layer)
+    # reorder: https://gis.stackexchange.com/questions/229587/how-to-move-layers-in-the-layer-order-panel-using-pyqgis
+    bridge = iface.layerTreeCanvasBridge()
+    order = bridge.rootGroup().customLayerOrder()
+    # insert on top of the bottom-most layer which is the ESRI map
+    desired_index = 1
+    order.insert(desired_index, order.pop(order.index(layer)))
+    # doesn't work? (TODO: fix)
+    bridge.rootGroup().setCustomLayerOrder(order)
 
 
 def map_attribute(year, attr):
@@ -56,11 +72,14 @@ def map_attribute(year, attr):
     # TODO: implement
     # figure out how to do the equivalent of: right click layer > symbology > graduated
     # NOTE: use the same "classes" when comparing across years so the map symbology is consistent
+    # may be helpful 
+    # https://gis.stackexchange.com/questions/284057/changing-layer-symbology-in-qgis-3-with-qgsfeaturerendererv2
+    # https://gis.stackexchange.com/questions/331408/change-vector-layer-symbology-pyqgis-3
 
     # with open(f'img/{year}_{attr}.png', 'w') as f:
     #     f.write(NotImplemented)
 
-    QgsProject.instance().removeMapLayer(layer)
+    # QgsProject.instance().removeMapLayer(layer)
 
 
 
