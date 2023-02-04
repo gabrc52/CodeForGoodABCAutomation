@@ -41,21 +41,11 @@ def joined_layer(year):
     return result['OUTPUT']
 
 
-# TODO: remove this function. only the next one should be needed
-# so move all the contents of this to the next function
-
 # this function helped with automating making maps by hand
+# Otherwise not really needed
 def load_joined(year):
     layer = joined_layer(year)
     QgsProject.instance().addMapLayer(layer)
-    # reorder: https://gis.stackexchange.com/questions/229587/how-to-move-layers-in-the-layer-order-panel-using-pyqgis
-    bridge = iface.layerTreeCanvasBridge()
-    order = bridge.rootGroup().customLayerOrder()
-    # insert on top of the bottom-most layer which is the ESRI map
-    desired_index = 1
-    order.insert(desired_index, order.pop(order.index(layer)))
-    # doesn't work? (TODO: fix)
-    bridge.rootGroup().setCustomLayerOrder(order)
 
 
 def map_attribute(year, attr):
@@ -69,6 +59,17 @@ def map_attribute(year, attr):
     layer = joined_layer(year)
     QgsProject.instance().addMapLayer(layer)
 
+    # REORDER LAYERS
+    # https://gis.stackexchange.com/questions/229587/how-to-move-layers-in-the-layer-order-panel-using-pyqgis
+    bridge = iface.layerTreeCanvasBridge()
+    order = bridge.rootGroup().customLayerOrder()
+    # insert on top of the bottom-most layer which is the ESRI map
+    desired_index = 1
+    order.insert(desired_index, order.pop(order.index(layer)))
+    # doesn't work? (TODO: fix)
+    bridge.rootGroup().setCustomLayerOrder(order)
+
+    # CHANGE SYMBOLOGY
     # TODO: implement
     # figure out how to do the equivalent of: right click layer > symbology > graduated
     # NOTE: use the same "classes" when comparing across years so the map symbology is consistent
@@ -76,10 +77,13 @@ def map_attribute(year, attr):
     # https://gis.stackexchange.com/questions/284057/changing-layer-symbology-in-qgis-3-with-qgsfeaturerendererv2
     # https://gis.stackexchange.com/questions/331408/change-vector-layer-symbology-pyqgis-3
 
-    # with open(f'img/{year}_{attr}.png', 'w') as f:
-    #     f.write(NotImplemented)
+    # SAVE MAP AS IMAGE FILE
+    with open(f'img/{year}_{attr}.png', 'w') as f:
+        # Don't forget the legend, compass, units, etc
+        f.write(NotImplemented)
 
-    # QgsProject.instance().removeMapLayer(layer)
+    # WE DON'T NEED THE LAYER ANYMORE
+    QgsProject.instance().removeMapLayer(layer)
 
 
 
