@@ -7,10 +7,11 @@ And the values are the new ones (the ones to replace WITH)
 If a key corresponds to multiple values, it means that they 
 should be summed
 
-If a key isn't found, then drop it
-
 (because the collapsed version wasn't found in the older dataset
 so only the full version could be downloaded)
+
+For comparing the decennial census with the American Community Survey,
+more equivalences will be needed and should be added here
 """
 
 equivalences = {
